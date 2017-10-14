@@ -1,28 +1,21 @@
 angular.module('mwl.calendar.docs', ['mwl.calendar', 'ngAnimate', 'ui.bootstrap', 'colorpicker.module']);
 angular
   .module('mwl.calendar.docs')
-  .controller('DraggableExternalEventsCtrl', function(moment, alert, calendarConfig) {
+  .controller('DraggableExternalEventsCtrl', function(moment, alert, calendarConfig, recipeService) {
 
     var vm = this;
 
     vm.events = [];
 
-    vm.externalEvents = [
-      {
-        title: 'Recipe 1',
-        type: 'warning',
-        color: calendarConfig.colorTypes.warning,
-        startsAt: moment().startOf('month').toDate(),
-        draggable: true
-      },
-      {
-        title: 'Recipe 2',
-        type: 'danger',
-        color: calendarConfig.colorTypes.important,
-        startsAt: moment().startOf('month').toDate(),
-        draggable: true
-      }
-    ];
+    vm.externalEvents = [];
+    getRecipes();
+    function getRecipes() {
+      recipeService.getRecipes().then(function (resp) {
+        vm.externalEvents = resp;
+      }, function (resp) {
+        console.error(resp);
+      });
+    }
 
     vm.calendarView = 'month';
     vm.viewDate = moment().startOf('month').toDate();
@@ -83,5 +76,4 @@ angular
       }
 
     };
-
-  });
+});

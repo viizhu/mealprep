@@ -1,187 +1,178 @@
-recipes_db : {
-    recipes: [
-        title: 'Chicken Tortilla Soup',
-        recipe: {
-            ingredients: [
-                ingredient : {
-                    item: canned tomatoes,
-                    amount: 12 oz,
-                    calories: 110
+ {
+    "recipes": [
+        {
+            "title": "Chicken Tortilla Soup",
+            "ingredients": [
+                {
+                    "item": "canned tomatoes",
+                    "amount": "12 oz",
+                    "calories": 110
                 },
-                ingredient: {
-                    item: canned green chilies,
-                    amount: 4 oz,
-                    calories: 48
+               {
+                    "item": "canned green chilies",
+                    "amount": "4 oz",
+                    "calories": 48
                 },
-                ingredient: {
-                    item: chicken breast,
-                    amount: 6 oz,
-                    calories: 276
+                {
+                    "item": "chicken breast",
+                    "amount": "6 oz",
+                    "calories": 276
                 },
-                ingredient: {
-                    item: medium onion,
-                    amount: 1,
-                    calories: 46
+                {
+                    "item": "medium onion",
+                    "amount": 1,
+                    "calories": 46
                 },
-                ingredient: {
-                    item: chicken broth,
-                    amount: 16 oz,
-                    calories: 77 
+                {
+                    "item":" chicken broth",
+                    "amount": "16 oz",
+                    "calories": 77 
                 },
-                ingredient: {
-                    item: cumin,
-                    amount: 1 tsp,
-                    calories: 0
+                {
+                    "item": "cumin",
+                    "amount": "1 tsp",
+                    "calories": 0
                 },
-                ingredient: {
-                    item: chile powder,
-                    amount: 2 tsp,
-                    calories: 0
+                {
+                    "item": "chile powder",
+                    "amount": "2 tsp",
+                    "calories": 0
                 },
-                ingredient: {
-                    item: salt and pepper,
-                    amount: 1/2 tsp,
-                    calories: 0
+                {
+                    "item": "salt and pepper",
+                    "amount": "1/2 tsp",
+                    "calories": 0
                 },
-                ingredient: {
-                    item: corn tortilla,
-                    item: 4,
-                    calories: 210
+                {
+                    "item": "corn tortilla",
+                    "amount": 4,
+                    "calories": 210
                 }
 
             ],
-            servingSize: '1 cup',
-            instructions: 'Saute onions, cut up chicken and brown, dump everything and pan and heat for about 30 minutes.  Cut up tortillas into strips and put in oven for 10-15 minutes until crispy.  Serve with avocados and cheese if desired'
-            categories: ['mexican', 'lowfat', 'quick']
+            "servingSize": "1 cup",
+            "numberServings": 4,
+            "instructions": "Saute onions, cut up chicken and brown, dump everything and pan and heat for about 30 minutes.   Cut up tortillas into strips and put in oven for 10-15 minutes until crispy.  Serve with avocados and cheese if desired",
+            "categories": ["mexican", "lowfat", "quick"]
         },
-        recipe: {
-            title: 'Bow Ties with Feta-Balsamic Dressing',
-            url: 'http://www.myrecipes.com/recipe/bow-ties-with-tomatoes-feta-balsamic-dressing',
-            ingredients: [
-               ingredient: {
-                   item: 'uncooked farfalle (bow tie pasta)',
-                    amount: '6 ounces uncooked',
-                    calories: 200
+        {
+            "title": "Bow Ties with Feta-Balsamic Dressing",
+            "url": "http://www.myrecipes.com/recipe/bow-ties-with-tomatoes-feta-balsamic-dressing",
+            "ingredients": [
+               {
+                   "item": "uncooked farfalle (bow tie pasta)",
+                    "amount": "6 ounces uncooked",
+                    "calories": 200
                },
-               ingredient: {
-                   item: grape tomatoes,
-                   amount: 2 cups,
-                   calories: 20
+               {
+                   "item": "grape tomatoes",
+                   "amount": "2 cups",
+                   "calories": 20
                }, 
-               ingredient: {
-                   item: seedless green grapes,
-                   amount: 1 cup,
-                   calories: 104
+               {
+                   "item": "seedless green grapes",
+                   "amount": "1 cup",
+                   "calories": 104
                }, 
-               ingredient: {
-                   item: thinly sliced fresh basil leaves,
-                   amount: 1/3 cup,
-                   calories: 10
+               {
+                   "item": "thinly sliced fresh basil leaves",
+                   "amount": "1/3 cup",
+                   "calories": 10
                },
-               ingredient: {
-                   item:  white balsamic vinegar,
-                   amount: 1 tbsp,
-                   calories: 0
+               {
+                   "item":  "white balsamic vinegar",
+                   "amount": "1 tbsp",
+                   "calories": 0
                },
-               ingredient: {
-                   item: chopped shallots,
-                   amount: 2 tbsp,
-                   calories: 5
+               {
+                   "item": "chopped shallots",
+                   "amount": "2 tbsp",
+                   "calories": 5
                },
-               ingredient: {
-                   item: capers,
-                   amount: 2 tsp,
-                   calories: 0
+               {
+                   "item": "capers",
+                   "amount": "2 tsp",
+                   "calories": 0
                },
-               ingredient: {
-                  amount: 1 teaspoon,
-                  item: Dijon mustard ,
-                  calories: 4
+               {
+                  "amount":" 1 teaspoon",
+                  "item": "Dijon mustard" ,
+                  "calories": 4
                },
-               ingredient: {
-                   item: minced garlic,
-                   amount: 1/2 tsp,
-                   calories: 4
+               {
+                   "item": "minced garlic",
+                   "amount": "1/2 tsp",
+                   "calories": 4
                },
-               ingredient: {
-                   item: salt,
-                   amount: 1/2 tsp,
-                   calories: 0
+               {
+                   "item": "salt",
+                   "amount":" 1/2 tsp",
+                   "calories": 0
                } ,
-               ingredient: {
-                   amount: 1/4 tsp,
-                   item: freshly ground black pepper,
-                   calories: 0
+               {
+                   "amount": "1/4 tsp",
+                   "item": "freshly ground black pepper",
+                   "calories": 0
                },
-               ingredient: {
-                   amount: 4 teaspoons,
-                   item: extra-virgin olive oil,
-                   calories: 160
+               {
+                   "amount": "4 tsp",
+                   "item": "extra-virgin olive oil",
+                   "calories": 160
                 }, 
-                ingredient: {
-                    amount: 4-ounce
-                    item: crumbled reduced-fat feta cheese
-                    calories: 60
-                },
-                servingSize: 2 cups,
-                instructions: 'Cook pasta according to package directions, omitting salt and fat. Drain. Combine cooked pasta, tomatoes, grapes, and basil in a large bowl.
-                 While pasta cooks, combine vinegar and next 6 ingredients (through pepper) in a small bowl, stirring with a whisk. Gradually add oil to vinegar mixture, 
-                 stirring constantly with a whisk. Drizzle vinaigrette over pasta mixture; toss well to coat. Add cheese; toss to combine. 
-                 Pan-grilled asparagus: Combine 1 teaspoon extra-virgin olive oil, 1/4 teaspoon salt, 1/8 teaspoon freshly ground black pepper, and 1 pound trimmed asparagus. 
-                 Heat a grill pan over medium-high heat. Coat pan with cooking spray. Add asparagus to pan; cook 5 minutes or until tender, turning once.',
-                 categories: ['italian']
+                {
+                    "amount": "4-ounce",
+                    "item": "crumbled reduced-fat feta cheese",
+                    "calories": 60
+                }
+            ],
+                "servingSize": "2 cups",
+                "numberServings": 4,
+                "instructions": "Cook pasta according to package directions, omitting salt and fat. Drain. Combine cooked pasta, tomatoes, grapes, and basil in a large bowl.  While pasta cooks, combine vinegar and next 6 ingredients (through pepper) in a small bowl, stirring with a whisk. Gradually add oil to vinegar mixture,   stirring constantly with a whisk. Drizzle vinaigrette over pasta mixture; toss well to coat. Add cheese; toss to combine.  Pan-grilled asparagus: Combine 1 teaspoon extra-virgin olive oil, 1/4 teaspoon salt, 1/8 teaspoon freshly ground black pepper, and 1 pound trimmed asparagus.  Heat a grill pan over medium-high heat. Coat pan with cooking spray. Add asparagus to pan; cook 5 minutes or until tender, turning once.",
+                 "categories": ["italian"]
             },
-            recipe: {
-                title: 'Grilled Chicken Quesadillas',
-                url: 'http://www.myrecipes.com/recipe/grilled-chicken-quesadillas',
-                ingredients: [
-                    ingredient: {
-                      amount:  15.5 oz,
-                      iterm:  can black beans rained and rinsed,
-                      calories: 390,
+            {
+                "title": "Grilled Chicken Quesadillas",
+                "url": "http://www.myrecipes.com/recipe/grilled-chicken-quesadillas",
+                "ingredients": [
+                    {
+                      "amount":  "15.5 oz",
+                      "item": "can black beans rained and rinsed",
+                      "calories": 390
                      },
-                     ingredient: {
-                         amount: 3 1/2 cups,
-                         item: shredded cooked rotisserie chicken,
-                         calories: 260
+                     {
+                         "amount": "3 1/2 cups",
+                         "item": "shredded cooked rotisserie chicken",
+                         "calories": 260
                      }, 
-                     ingredient: {
-                         item: grated Monterey Jack,
-                         amount: 6 oz,
-                         calories: 634
+                     {
+                         "item": "grated Monterey Jack",
+                         "amount": "6 oz",
+                         "calories": 634
                       }, 
-                      ingredient: {
-                          item: sliced pickled jalapeno chilies chopped,
-                          amount 1/4 cup,
-                          calories: 50
+                      {
+                          "item": "sliced pickled jalapeno chilies chopped",
+                          "amount" :"1/4 cup",
+                          "calories": 50
                       } , 
-                      ingredient: {
-                          item: Salt,
-                          amount: pinch,
-                          calories: 0
+                      {
+                          "item": "Salt",
+                          "amount": "pinch",
+                          "calories": 0
                        },
-                       ingredient: {
-                           amount: 4 
-                           item: (10-inch) flour tortillas,
-                           calories: 872
+                       {
+                           "amount": 4 ,
+                           "item": "(10-inch) flour tortillas",
+                           "calories": 872
                        }
                 ],
-                servingSize: 1 
-                instructions: 'Preheat oven to 200°F and line a large baking sheet with foil or parchment. 
-                Place beans in a large bowl and use a potato masher or fork to mash them slightly. Add chicken, cheese and jalapeños and stir to combine. Season with salt.
-                Place 1 tortilla on a work surface and spread a quarter of chicken mixture over half of tortilla. Fold other half of tortilla over to form a half-moon, pressing firmly. 
-                Repeat with remaining chicken mixture and tortillas. Warm a ridged grill pan or a 12-inch skillet over medium heat. 
-                Cook 1 quesadilla at a time, turning carefully once, until cheese is melted and tortillas are golden, 2 to 4 minutes per side. 
-                Transfer grilled quesadilla to prepared baking sheet and place in oven to keep warm. Repeat with remaining quesadillas. 
-                When all quesadillas are grilled, cut each into 4 wedges and serve immediately.',
-                categories: ['mexican', 'quick']
+                "servingSize": 1 ,
+                "numberServings": 4,
+                "instructions": "Preheat oven to 200°F and line a large baking sheet with foil or parchment. Place beans in a large bowl and use a potato masher or fork to mash them slightly. Add chicken, cheese and jalapeños and stir to combine. Season with salt. Place 1 tortilla on a work surface and spread a quarter of chicken mixture over half of tortilla. Fold other half of tortilla over to form a half-moon, pressing firmly.  Repeat with remaining chicken mixture and tortillas. Warm a ridged grill pan or a 12-inch skillet over medium heat.  Cook 1 quesadilla at a time, turning carefully once, until cheese is melted and tortillas are golden, 2 to 4 minutes per side.  Transfer grilled quesadilla to prepared baking sheet and place in oven to keep warm. Repeat with remaining quesadillas. When all quesadillas are grilled, cut each into 4 wedges and serve immediately.",
+                "categories": ["mexican", "quick"]
                 
             }
-            ]
-        }
-
-    ]
-}
+        ]
+    }
 
 
     
