@@ -1,0 +1,63 @@
+recipes_db : {
+    recipes: [
+        title: 'Chicken Tortilla Soup',
+        recipe: {
+            ingredients: [
+                ingredient : {
+                    item: canned tomatoes,
+                    amount: 12 oz,
+                    calories: 110
+                },
+                ingredient: {
+                    item: canned green chilies,
+                    amount: 4 oz,
+                    calories: 48
+                },
+                ingredient: {
+                    item: chicken breast,
+                    amount: 6 oz,
+                    calories: 276
+                },
+                ingredient: {
+                    item: medium onion,
+                    amount: 1,
+                    calories: 46
+                },
+                ingredient: {
+                    item: chicken broth,
+                    amount: 16 oz,
+                    calories: 77 
+                },
+                ingredient: {
+                    item: cumin,
+                    amount: 1 tsp,
+                    calories: 0
+                },
+                ingredient: {
+                    item: chile powder,
+                    amount: 2 tsp,
+                    calories: 0
+                },
+                ingredient: {
+                    item: salt and pepper,
+                    amount: 1/2 tsp,
+                    calories: 0
+                },
+                ingredient: {
+                    item: corn tortilla,
+                    item: 4,
+                    calories: 210
+                }
+
+            ],
+            servings: 4,
+            instructions: 'Saute onions, cut up chicken and brown, dump everything and pan and heat for about 30 minutes.  Cut up tortillas into strips and put in oven for 10-15 minutes until crispy.  Serve with avocados and cheese if desired'
+            categories: ['mexican', 'lowfat', 'quick']
+        }
+
+    ]
+
+}
+
+
+    
