@@ -3,6 +3,9 @@
         <h3 class="modal-title">{{ vm.event.title }}</h3>
       </div>
       <div class="modal-body">
+        <ul>
+          <li ng-repeat="ingredient in vm.externalEvents track by $index">
+        </ul>
         <p>Action:
         <pre>{{ vm.action }}</pre>
         </p>
