@@ -1,7 +1,7 @@
 angular.module('mwl.calendar.docs', ['mwl.calendar', 'ngAnimate', 'ui.bootstrap', 'colorpicker.module']);
 angular
   .module('mwl.calendar.docs')
-  .controller('DraggableExternalEventsCtrl', function(moment, calendarConfig) {
+  .controller('DraggableExternalEventsCtrl', function(moment, alert, calendarConfig) {
 
     var vm = this;
 
