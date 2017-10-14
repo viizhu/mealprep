@@ -11,7 +11,7 @@ angular
     getRecipes();
     function getRecipes() {
       recipeService.getRecipes().then(function (resp) {
-        vm.externalEvents = resp;
+        vm.externalEvents = resp.data.recipes;
       }, function (resp) {
         console.error(resp);
       });
