@@ -18,6 +18,9 @@
   <body>
     <div ng-controller="DraggableExternalEventsCtrl as vm">
 
+
+  <h2 class="text-center">{{ vm.calendarTitle }}</h2>
+
   <div class="row">
     <div class="col-md-3">
       <div class="well">
@@ -36,7 +39,7 @@
       </div>
     </div>
     <div class="col-md-9">
-     
+
       <br>
       <div class="row">
 
@@ -71,10 +74,8 @@
 
         <div class="col-md-6 text-center">
           <div class="btn-group">
-            <label class="btn btn-primary" ng-model="vm.calendarView" uib-btn-radio="'year'">Year</label>
             <label class="btn btn-primary" ng-model="vm.calendarView" uib-btn-radio="'month'">Month</label>
             <label class="btn btn-primary" ng-model="vm.calendarView" uib-btn-radio="'week'">Week</label>
-            <label class="btn btn-primary" ng-model="vm.calendarView" uib-btn-radio="'day'">Day</label>
           </div>
         </div>
 
@@ -82,11 +83,15 @@
       <br>
       <mwl-calendar
         events="vm.events"
+        view-title="vm.calendarTitle"
         view="vm.calendarView"
         view-date="vm.viewDate"
+        on-event-click="vm.eventClicked(calendarEvent)"
         cell-is-open="vm.cellIsOpen"
         cell-auto-open-disabled="true"
-        on-event-times-changed="vm.eventDropped(calendarEvent, calendarNewEventStart, calendarNewEventEnd)">
+        cell-modifier="vm.modifyCell(calendarCell)"
+        on-event-times-changed="vm.eventDropped(calendarEvent, calendarNewEventStart, calendarNewEventEnd)"
+        on-timespan-click="vm.timespanClicked(calendarDate, calendarCell)">
       </mwl-calendar>
     </div>
   </div>
