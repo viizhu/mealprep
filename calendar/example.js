@@ -21,17 +21,17 @@ angular
     vm.viewDate = moment().startOf('month').toDate();
     vm.cellIsOpen = false;
 
-    vm.eventDropped = function(event, start, end) {
+    vm.eventDropped = function(event, start) {
       var externalIndex = vm.externalEvents.indexOf(event);
       if (externalIndex > -1) {
         vm.externalEvents.splice(externalIndex, 1);
         vm.events.push(event);
       }
       event.startsAt = start;
-      if (end) {
-        event.endsAt = end;
-      }
+      
       vm.viewDate = start;
+      event.startsAt = vm.viewDate;
+      event.endsAt =  new Date(vm.viewDate.getTime() + (event.numberServings-1)*24*60*60*1000);
       vm.cellIsOpen = true;
     };
 
