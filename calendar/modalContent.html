@@ -6,14 +6,14 @@
         <p><b>Serving Size:</b> {{ vm.event.servingSize }}<br>
         <b>Number of Servings:</b> {{ vm.event.numberServings }}</p>
         <b>Ingredients</b>
-        <ul>
+        <ul style="margin: 0 0 0 10px;">
           <li ng-repeat="ingredient in vm.event.ingredients track by $index">
             {{ ingredient.amount }} {{ ingredient.item }} ({{ ingredient.calories }} calories)
           </li>
         </ul>
 
         <p><b>Instructions:</b><br>
-          <ol>
+          <ol style="margin: 0 0 0 10px;">
             <li ng-repeat="instruction in vm.event.instructions">
               {{ instruction }}
             </li>
