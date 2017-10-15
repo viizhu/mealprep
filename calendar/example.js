@@ -30,9 +30,10 @@ angular
       event.startsAt = start;
       
       vm.viewDate = start;
+      event.allDay = true;
       event.startsAt = vm.viewDate;
       event.endsAt =  new Date(vm.viewDate.getTime() + (event.numberServings-1)*24*60*60*1000);
-      vm.cellIsOpen = true;
+      vm.cellIsOpen = false;
     };
 
     vm.eventClicked = function(event) {
@@ -76,4 +77,9 @@ angular
       }
 
     };
-});
+
+     vm.cellModifier = function(cell) {
+      console.log(cell);
+    };
+
+}) ;
