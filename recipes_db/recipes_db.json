@@ -52,7 +52,7 @@
             ],
             "servingSize": "1 cup",
             "numberServings": 4,
-            "instructions": "<ol><li>Saute onions, cut up chicken and brown, dump everything and pan and heat for about 30 minutes.</li>   <li>Cut up tortillas into strips and put in oven for 10-15 minutes until crispy.</li>   <li>Serve with avocados and cheese if desired</li></ol>",
+            "instructions": <ol><li>Saute onions, cut up chicken and brown, dump everything and pan and heat for about 30 minutes.</li>   <li>Cut up tortillas into strips and put in oven for 10-15 minutes until crispy.</li>   <li>Serve with avocados and cheese if desired</li></ol>,
             "categories": ["mexican", "lowfat", "quick"]
         },
         {
