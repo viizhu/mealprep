@@ -40,7 +40,8 @@ form-container div, .form-container  span{
 .oauth-buttons {
     text-align:center;
 }
-.row {
+
+.modal-content .row {
 	text-align:center;
 }
 #login-form{
@@ -444,6 +445,10 @@ p{
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+}
+
+.modal-content row{
+    text-align: center;
 }
 
 /* The Close Button */
