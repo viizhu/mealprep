@@ -23,8 +23,6 @@
     <script src="helpers.js"></script>
     <script src="../recipes_db/recipe.service.js"></script>
 
-    <script src="calendarConfig.js"></script>
-
     <!--Stylesheet-->
     <link rel="stylesheet" href="../css/style.css" >
     <link rel="stylesheet" href="../css/font-awesome.css">
@@ -34,11 +32,9 @@
       .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
         background-color: #FF9230 !important;
       }
-
       a.linktext, .linktext {
         color: #FF9230 !important;
       }
-
       .footer {
         width: 100% !important;
       }
@@ -135,7 +131,7 @@
                 on-event-click="vm.eventClicked(calendarEvent)"
                 cell-is-open="vm.cellIsOpen"
                 cell-auto-open-disabled="true"
-                custom-template-urls="{calendarMonthCell: 'calendarMonthCellTemplate.html', calendarMonthCellEvent: 'calendarMonthCellEventTemplate.html'}"
+                custom-template-urls="{calendarMonthCell: 'calendarMonthCell.html', calendarMonthCellEvents: 'calendarMonthCellEvents.html'}"
                 cell-modifier="vm.cellModifier(calendarCell)"
                 on-event-times-changed="vm.eventDropped(calendarEvent, calendarNewEventStart, calendarNewEventEnd)"
                 on-timespan-click="vm.timespanClicked(calendarDate, calendarCell)">
@@ -148,7 +144,7 @@
 </main>
 
 <!--FOOTER-->
-<footer class="container" style="width:100% !important;">
+<footer class="container">
   <p>&copy; 2017 Company, Inc.</p>
   <div class="social-media">
     <i class="fa fa-facebook-official" aria-hidden="true"></i>
