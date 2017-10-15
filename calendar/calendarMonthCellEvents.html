@@ -9,7 +9,6 @@
     ng-mouseenter="vm.highlightEvent(event, true)"
     ng-mouseleave="vm.highlightEvent(event, false)"
     tooltip-append-to-body="true"
-    uib-tooltip-html="vm.calendarEventTitle.monthViewTooltip(event) | calendarTrustAsHtml"
     mwl-draggable="event.draggable === true"
     drop-data="{event: event, draggedFromDate: day.date.toDate()}"
     auto-scroll="vm.draggableAutoScroll">
