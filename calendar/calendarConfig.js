@@ -5,6 +5,6 @@ angular.module('mwl.calendar.docs')
     console.log(calendarConfig);
 
     // Change the month view template globally to a custom template
-    calendarConfig.templates.calendarMonthView = './calendarMonthCellTemplate.html'; 
+    calendarConfig.templates.calendarMonthCell = './calendarMonthCellTemplate.html'; 
 
   }]);
