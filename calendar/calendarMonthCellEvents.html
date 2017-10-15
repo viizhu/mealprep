@@ -1,7 +1,7 @@
 <div class="events-list" ng-show="day.events.length > 0">
   <a
     
-    ng-repeat="event in day.events | orderBy:'startsAt' track by event.calendarEventId+event.startsAt"
+    ng-repeat="event in day.events | orderBy:'startsAt' track by event.startsAt+event.title"
     href="javascript:;"
     ng-click="$event.stopPropagation(); vm.onEventClick({calendarEvent: event})"
     class="pull-left"
