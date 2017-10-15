@@ -3,11 +3,16 @@
         <h3 class="modal-title">{{ vm.event.title }}</h3>
       </div>
       <div class="modal-body">
+        <p>{{ vm.event.numberServings }} per {{ vm.event.servingSize }}</p>
         <b>Ingredients</b>
         <ul>
           <li ng-repeat="ingredient in vm.event.ingredients track by $index">
-            {{ ingredient.amount }} {{ ingredient.item }} ({{ ingredient.calories }})
+            {{ ingredient.amount }} {{ ingredient.item }} ({{ ingredient.calories }} calories)
+          </li>
         </ul>
+
+        <p><b>Instructions:</b><br>
+          {{ vm.event.instructions }}</p>
       </div>
       <div class="modal-footer">
         <button class="btn btn-primary" ng-click="$close()">OK</button>
