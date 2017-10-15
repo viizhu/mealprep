@@ -1,10 +1,7 @@
 <div class="events-list" ng-show="day.events.length > 0">
   <a
-<<<<<<< HEAD:calendar/calendarMonthCellEventTemplate.html
 
-=======
     
->>>>>>> 046e7748056255108c98ebe3fdaafd8d48bb8452:calendar/calendarMonthCellEvents.html
     ng-repeat="event in day.events | orderBy:'startsAt' track by event.startsAt.getTime()+event.title"
     href="javascript:;"
     ng-click="$event.stopPropagation(); vm.onEventClick({calendarEvent: event})"
