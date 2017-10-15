@@ -13,12 +13,7 @@
         </ul>
 
         <p><b>Instructions:</b><br>
-          <ol>
-            <li ng-repeat="instruction in vm.event.instructions track by $index">
-              {{ instruction }}
-            </li>
-          </ol>
-        </p>
+          {{ vm.event.instructions }}</p>
       </div>
       <div class="modal-footer">
         <button class="btn btn-primary" ng-click="$close()">OK</button>
