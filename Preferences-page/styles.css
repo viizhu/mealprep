@@ -1,14 +1,76 @@
-body {
+* {
+  font-family: 'Muli', sans-serif;
+
+}
+
+.sub-body {
   margin-left: 200px;
   margin-right: 200px;
   margin-bottom: 100px;
+  margin-top: 40px;
+}
+
+.logo {
+  width: auto;
+  height: 50px;
+}
+nav {
+  background-color: white;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.35);
+  padding: 20px 0;
+  z-index: 1000;
+}
+nav a {
+  text-decoration: none;
+  color: #FF9230;
+  font-size: 16px;
+}
+nav a:hover {
+  color: lightgray;
+}
+/*NAVBAR MEDIA QUERIES*/
+@media (min-width:){ /*tablets*/
+
+}
+@media (min-width: 1200px) { /*Laptops & Desktop*/
+  nav {
+    padding: 15px 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navlinks a {
+    margin-right: 15px;
+  }
 }
 
 .wrapper {
   text-align: center;
 }
+
 button {
   margin-top: 40px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 15px;
+  margin: 25px auto;
+  background-color: #FF9230;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+}
+
+.button:hover{
+  background-color: #FFC44A;
 }
 
 .hovereffect {
@@ -238,4 +300,17 @@ button {
   transform: translate3d(0,0,0) rotate(45deg) scale(1);
   opacity: 1;
   filter: alpha(opacity=100);
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.social-media i {
+  color: white;
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+  font-size: 24px;
 }
