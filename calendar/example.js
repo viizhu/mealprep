@@ -20,11 +20,11 @@ angular
     vm.calendarView = 'month';
     vm.viewDate = moment().startOf('month').toDate();
     vm.cellIsOpen = false;
+    
 
     vm.eventDropped = function(event, start) {
       var externalIndex = vm.externalEvents.indexOf(event);
       if (externalIndex > -1) {
-        vm.externalEvents.splice(externalIndex, 1);
         vm.events.push(event);
       }
       event.startsAt = start;
@@ -33,6 +33,7 @@ angular
       event.allDay = true;
       event.startsAt = vm.viewDate;
       event.endsAt =  new Date(vm.viewDate.getTime() + (event.numberServings-1)*24*60*60*1000);
+      event.label = event.title;
       vm.cellIsOpen = false;
     };
 
@@ -79,7 +80,7 @@ angular
     };
 
      vm.cellModifier = function(cell) {
-      console.log(cell);
+      
     };
 
 }) ;

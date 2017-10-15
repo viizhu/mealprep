@@ -365,6 +365,7 @@ footer .container {
   font-size: 24px;
 }
 
+<<<<<<< HEAD
 /*FOOTER MEDIA QUERIES*/
 media (min-width:){ /*tablets*/
 
@@ -374,3 +375,20 @@ media (min-width:){ /*tablets*/
     padding: 2.5em 25px;
   }
 }
+=======
+/*CALENDAR*/
+.events-list {
+    position: absolute;
+    vertical-align: text-bottom;
+    left: 0;
+    z-index: 50;
+    margin: 0 0 10px 0;
+  }
+
+  @media screen and (max-width: 500px) {
+    a.events-list,.pull-left {
+      font-size: 8px;
+      margin: 0 0 10px 0;
+    }
+  }
+>>>>>>> master
