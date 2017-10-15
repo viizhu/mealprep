@@ -4,8 +4,8 @@
       </div>
       <div class="modal-body">
         <ul>
-          <li ng-repeat="event in vm.externalEvents track by $index">
-            {{ event.ingredients }}
+          <li ng-repeat="ingredient in vm.event.ingredients track by $index">
+            {{ ingredient.item }}
         </ul>
         <p>Event:
         <pre>{{ vm.event | json }}</pre>
