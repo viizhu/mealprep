@@ -198,7 +198,14 @@ footer {
 /*CALENDAR*/
 .events-list {
     position: absolute;
-    top: 0;
+    vertical-align: text-bottom;
     left: 0;
     z-index: 50;
+  }
+
+  @media screen and (max-width: 500px) {
+    a.events-list,.pull-left {
+      font-size: 9px;
+      margin: 5px 0 0 0;
+    }
   }
