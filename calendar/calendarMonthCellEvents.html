@@ -1,4 +1,4 @@
-<div class="events-list-ovr" ng-show="day.events.length > 0">
+<div class="events-list" ng-show="day.events.length > 0">
   <a
     ng-repeat="event in day.events | orderBy:'startsAt' track by event.calendarEventId"
     href="javascript:;"
@@ -14,5 +14,5 @@
     mwl-draggable="event.draggable === true"
     drop-data="{event: event, draggedFromDate: day.date.toDate()}"
     auto-scroll="vm.draggableAutoScroll">
-     {{event.calendarEventTitle}}
+     {{event.title}}
   </a>

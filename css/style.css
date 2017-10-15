@@ -196,9 +196,9 @@ footer {
 }
 
 /*CALENDAR*/
-.events_list_ovr {
+.events-list {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     z-index: 50;
-}
+  }
