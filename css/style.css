@@ -194,3 +194,11 @@ footer {
   margin-top: 10px;
   font-size: 24px;
 }
+
+/*CALENDAR*/
+.events-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+  }
