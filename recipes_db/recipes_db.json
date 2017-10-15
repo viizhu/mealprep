@@ -52,7 +52,7 @@
             ],
             "servingSize": "1 cup",
             "numberServings": 4,
-            "instructions": "Saute onions, cut up chicken and brown, dump everything and pan and heat for about 30 minutes.<br>  Cut up tortillas into strips and put in oven for 10-15 minutes until crispy.  Serve with avocados and cheese if desired",
+            "instructions": ["Saute onions, cut up chicken and brown, dump everything and pan and heat for about 30 minutes.","Cut up tortillas into strips and put in oven for 10-15 minutes until crispy.","Serve with avocados and cheese if desired"],
             "categories": ["mexican", "lowfat", "quick"]
         },
         {
@@ -127,7 +127,7 @@
             ],
                 "servingSize": "2 cups",
                 "numberServings": 4,
-                "instructions": "Cook pasta according to package directions, omitting salt and fat. Drain. Combine cooked pasta, tomatoes, grapes, and basil in a large bowl.  While pasta cooks, combine vinegar and next 6 ingredients (through pepper) in a small bowl, stirring with a whisk. Gradually add oil to vinegar mixture,   stirring constantly with a whisk. Drizzle vinaigrette over pasta mixture; toss well to coat. Add cheese; toss to combine.  Pan-grilled asparagus: Combine 1 teaspoon extra-virgin olive oil, 1/4 teaspoon salt, 1/8 teaspoon freshly ground black pepper, and 1 pound trimmed asparagus.  Heat a grill pan over medium-high heat. Coat pan with cooking spray. Add asparagus to pan; cook 5 minutes or until tender, turning once.",
+                "instructions": ["Cook pasta according to package directions, omitting salt and fat.","Drain. Combine cooked pasta, tomatoes, grapes, and basil in a large bowl.","While pasta cooks, combine vinegar and next 6 ingredients (through pepper) in a small bowl, stirring with a whisk.","Gradually add oil to vinegar mixture,   stirring constantly with a whisk.","Drizzle vinaigrette over pasta mixture; toss well to coat.","Add cheese; toss to combine.","Pan-grilled asparagus: Combine 1 teaspoon extra-virgin olive oil, 1/4 teaspoon salt, 1/8 teaspoon freshly ground black pepper, and 1 pound trimmed asparagus.","Heat a grill pan over medium-high heat.","Coat pan with cooking spray.","Add asparagus to pan; cook 5 minutes or until tender, turning once."],
                  "categories": ["italian"]
             },
             {
@@ -167,7 +167,7 @@
                 ],
                 "servingSize": 1 ,
                 "numberServings": 4,
-                "instructions": "Preheat oven to 200°F and line a large baking sheet with foil or parchment. Place beans in a large bowl and use a potato masher or fork to mash them slightly. Add chicken, cheese and jalapeños and stir to combine. Season with salt. Place 1 tortilla on a work surface and spread a quarter of chicken mixture over half of tortilla. Fold other half of tortilla over to form a half-moon, pressing firmly.  Repeat with remaining chicken mixture and tortillas. Warm a ridged grill pan or a 12-inch skillet over medium heat.  Cook 1 quesadilla at a time, turning carefully once, until cheese is melted and tortillas are golden, 2 to 4 minutes per side.  Transfer grilled quesadilla to prepared baking sheet and place in oven to keep warm. Repeat with remaining quesadillas. When all quesadillas are grilled, cut each into 4 wedges and serve immediately.",
+                "instructions": ["Preheat oven to 200°F and line a large baking sheet with foil or parchment.","Place beans in a large bowl and use a potato masher or fork to mash them slightly.","Add chicken, cheese and jalapeños and stir to combine. Season with salt.","Place 1 tortilla on a work surface and spread a quarter of chicken mixture over half of tortilla.","Fold other half of tortilla over to form a half-moon, pressing firmly.","Repeat with remaining chicken mixture and tortillas.","Warm a ridged grill pan or a 12-inch skillet over medium heat. ","Cook 1 quesadilla at a time, turning carefully once, until cheese is melted and tortillas are golden, 2 to 4 minutes per side.","Transfer grilled quesadilla to prepared baking sheet and place in oven to keep warm.","Repeat with remaining quesadillas.","When all quesadillas are grilled, cut each into 4 wedges and serve immediately."],
                 "categories": ["mexican", "quick"]
 
             }
