@@ -196,7 +196,7 @@ footer {
 }
 
 /*CALENDAR*/
-.events_list {
+.events_list_ovr {
     position: absolute;
     top: 0px;
     left: 0px;
