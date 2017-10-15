@@ -6,8 +6,12 @@
 .sub-body {
   margin-left: 200px;
   margin-right: 200px;
-  margin-bottom: 100px;
+  margin-bottom: 100px; 
   margin-top: 40px;
+  height: 100%;
+  z-index: 10000;
+  display: block;
+
 }
 
 .logo {
@@ -47,6 +51,7 @@ nav a:hover {
 
 .wrapper {
   text-align: center;
+  margin: 100px;
 }
 
 button {
@@ -306,6 +311,20 @@ footer {
   background-color: black;
   color: white;
   text-align: center;
+
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+
+  height: 100px;
+}
+
+.container{
+  padding: 2em 25px;
+
+  width: 100%;
 }
 .social-media i {
   color: white;
@@ -314,3 +333,18 @@ footer {
   margin-top: 10px;
   font-size: 24px;
 }
+
+body {
+  position: relative;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  
+}
+
+
