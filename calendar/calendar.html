@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html ng-app="mwl.calendar.docs">
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <script src="https://unpkg.com/moment@2.17.1"></script>
     <script src="https://unpkg.com/interactjs@1"></script>
     <script src="https://unpkg.com/angular@1.6.4/angular.js"></script>
@@ -16,9 +23,32 @@
     <script src="helpers.js"></script>
     <script src="../recipes_db/recipe.service.js"></script>
     <script src="calendarConfig.js"></script>
-    
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="../css/style.css" >
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/animate.css">
+
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
   </head>
   <body>
+    <!--NAVIGATION-->
+    <header>
+      <nav>
+        <img class="logo" src="imgs/logo/menuize.png"/>
+        <div class="navlinks">
+         <a href="#">Why Us</a>
+         <a href="#">How it Works</a>
+         <a href="#">Pricing</a>
+         <a href="#">Login</a>
+         <a href="#">Sign Up</a>
+       </div>
+      </nav>
+    </header>
+
+    <main role="main">
+      <div class="container">
     <div ng-controller="DraggableExternalEventsCtrl as vm">
 
 
@@ -99,6 +129,9 @@
     </div>
   </div>
 </div>
+
+</div>
+</main>
 
   </body>
 </html>
