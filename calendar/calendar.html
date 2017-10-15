@@ -134,7 +134,7 @@
         on-event-click="vm.eventClicked(calendarEvent)"
         cell-is-open="vm.cellIsOpen"
         cell-auto-open-disabled="true"
-        custom-template-urls="{calendarMonthCell: 'calendarMonthCellTemplate.html'}"
+         custom-template-urls="{calendarMonthCell: 'calendarMonthCellTemplate.html', calendarMonthCellEvents: 'calendarMonthCellEvent.html' }"
         cell-modifier="vm.cellModifier(calendarCell)"
         on-event-times-changed="vm.eventDropped(calendarEvent, calendarNewEventStart, calendarNewEventEnd)"
         on-timespan-click="vm.timespanClicked(calendarDate, calendarCell)">
