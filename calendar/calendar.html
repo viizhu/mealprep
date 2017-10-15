@@ -38,6 +38,10 @@
       a.linktext, .linktext {
         color: #FF9230 !important;
       }
+
+      .footer {
+        width: 100% !important;
+      }
     </style>
 
     <!--Font-->
@@ -60,88 +64,85 @@
 
     <main role="main">
       <div class="container">
-    <div ng-controller="DraggableExternalEventsCtrl as vm">
+      <div ng-controller="DraggableExternalEventsCtrl as vm">
+        <h2 class="text-center">{{ vm.calendarTitle }}</h2>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="well">
+                <ul>
+                  <li
+                    ng-repeat="event in vm.externalEvents track by $index"
+                    mwl-draggable="true"
+                    drop-data="{event:event}">
+                    <a
+                      href="javascript:;"
+                      ng-class="text-primary"
+                      class="linktext">
+                      {{ event.title }}
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-9">
 
+              <br>
+              <div class="row">
 
-  <h2 class="text-center">{{ vm.calendarTitle }}</h2>
+                <div class="col-md-6 text-center">
+                  <div class="btn-group">
 
-  <div class="row">
-    <div class="col-md-3">
-      <div class="well">
-        <ul>
-          <li
-            ng-repeat="event in vm.externalEvents track by $index"
-            mwl-draggable="true"
-            drop-data="{event:event}">
-            <a
-              href="javascript:;"
-              ng-class="text-primary"
-              class="linktext">
-              {{ event.title }}
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="col-md-9">
+                    <button
+                      class="btn btn-primary"
+                      mwl-date-modifier
+                      date="vm.viewDate"
+                      decrement="vm.calendarView">
+                      Previous
+                    </button>
+                    <button
+                      class="btn btn-default"
+                      mwl-date-modifier
+                      date="vm.viewDate"
+                      set-to-today>
+                      Today
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      mwl-date-modifier
+                      date="vm.viewDate"
+                      increment="vm.calendarView">
+                      Next
+                    </button>
+                  </div>
+                </div>
 
-      <br>
-      <div class="row">
+                <br class="visible-xs visible-sm">
 
-        <div class="col-md-6 text-center">
-          <div class="btn-group">
+                <div class="col-md-6 text-center">
+                  <div class="btn-group">
+                    <label class="btn btn-primary" ng-model="vm.calendarView" uib-btn-radio="'month'">Month</label>
+                    <label class="btn btn-primary" ng-model="vm.calendarView" uib-btn-radio="'week'">Week</label>
+                  </div>
+                </div>
 
-            <button
-              class="btn btn-primary"
-              mwl-date-modifier
-              date="vm.viewDate"
-              decrement="vm.calendarView">
-              Previous
-            </button>
-            <button
-              class="btn btn-default"
-              mwl-date-modifier
-              date="vm.viewDate"
-              set-to-today>
-              Today
-            </button>
-            <button
-              class="btn btn-primary"
-              mwl-date-modifier
-              date="vm.viewDate"
-              increment="vm.calendarView">
-              Next
-            </button>
+              </div>
+              <br>
+              <mwl-calendar
+                events="vm.events"
+                view-title="vm.calendarTitle"
+                view="vm.calendarView"
+                view-date="vm.viewDate"
+                on-event-click="vm.eventClicked(calendarEvent)"
+                cell-is-open="vm.cellIsOpen"
+                cell-auto-open-disabled="true"
+                custom-template-urls="{calendarMonthCell: 'calendarMonthCellTemplate.html'}"
+                cell-modifier="vm.cellModifier(calendarCell)"
+                on-event-times-changed="vm.eventDropped(calendarEvent, calendarNewEventStart, calendarNewEventEnd)"
+                on-timespan-click="vm.timespanClicked(calendarDate, calendarCell)">
+              </mwl-calendar>
+            </div>
           </div>
         </div>
-
-        <br class="visible-xs visible-sm">
-
-        <div class="col-md-6 text-center">
-          <div class="btn-group">
-            <label class="btn btn-primary" ng-model="vm.calendarView" uib-btn-radio="'month'">Month</label>
-            <label class="btn btn-primary" ng-model="vm.calendarView" uib-btn-radio="'week'">Week</label>
-          </div>
-        </div>
-
-      </div>
-      <br>
-      <mwl-calendar
-        events="vm.events"
-        view-title="vm.calendarTitle"
-        view="vm.calendarView"
-        view-date="vm.viewDate"
-        on-event-click="vm.eventClicked(calendarEvent)"
-        cell-is-open="vm.cellIsOpen"
-        cell-auto-open-disabled="true"
-         custom-template-urls="{calendarMonthCell: 'calendarMonthCellTemplate.html', calendarMonthCellEvents: 'calendarMonthCellEvent.html' }"
-        cell-modifier="vm.cellModifier(calendarCell)"
-        on-event-times-changed="vm.eventDropped(calendarEvent, calendarNewEventStart, calendarNewEventEnd)"
-        on-timespan-click="vm.timespanClicked(calendarDate, calendarCell)">
-      </mwl-calendar>
-    </div>
-  </div>
-</div>
 
 </div>
 </main>
