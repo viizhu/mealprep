@@ -17,11 +17,7 @@
     'cal-day-open': dayIndex === vm.openDayIndex
   }">
 
-  <small
-    class="cal-events-num badge badge-important pull-left"
-    ng-repeat="event in cell.day.events">
-    {{event.title}}
-  </small>
+ <ng-include src="vm.customTemplateUrls.calendarMonthCellEvents || vm.calendarConfig.templates.calendarMonthCellEvents"></ng-include>
 
   <span
     class="pull-right"
@@ -35,7 +31,7 @@
     <i class="fa fa-chevron-up"></i>
   </div>
 
-  <ng-include src="vm.customTemplateUrls.calendarMonthCellEvents || vm.calendarConfig.templates.calendarMonthCellEvents"></ng-include>
+
 
   <div class="cal-week-box-cell" ng-if="$first && rowHovered">
     <span ng-bind="vm.getWeekNumberLabel(day)"></span>

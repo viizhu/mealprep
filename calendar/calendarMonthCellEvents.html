@@ -1,0 +1,20 @@
+<div class="events-list" ng-show="day.events.length > 0">
+  <a
+<<<<<<< HEAD:calendar/calendarMonthCellEventTemplate.html
+
+=======
+    
+>>>>>>> 046e7748056255108c98ebe3fdaafd8d48bb8452:calendar/calendarMonthCellEvents.html
+    ng-repeat="event in day.events | orderBy:'startsAt' track by event.startsAt.getTime()+event.title"
+    href="javascript:;"
+    ng-click="$event.stopPropagation(); vm.onEventClick({calendarEvent: event})"
+    class="pull-left"
+    ng-style="{backgroundColor: event.color.primary}"
+    ng-mousedown="$event.stopPropagation()"
+    ng-mouseenter="vm.highlightEvent(event, true)"
+    ng-mouseleave="vm.highlightEvent(event, false)"
+    mwl-draggable="event.draggable === true"
+    drop-data="{event: event, draggedFromDate: day.date.toDate()}"
+    auto-scroll="vm.draggableAutoScroll">
+     {{event.title}}
+  </a>
