@@ -8,7 +8,8 @@ angular
 
   function week(viewDate) {
     return calendarConfig.titleFormats.week
-      .replace('{week}', moment(viewDate).startOf('isoWeek').format('MMM D YYY'));
+      .replace('{week}', moment(viewDate).startOf('isoWeek').format('MMM D '))
+      .replace('{year}', moment(viewDate).startOf('isoWeek').format('YYYY'));
   }
 
   function month(viewDate) {
