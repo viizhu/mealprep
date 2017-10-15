@@ -25,7 +25,7 @@
   background-color: #FFC44A;
 }
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 h1 {
   font-size: 36px;
@@ -33,7 +33,8 @@ h1 {
 }
 p {
   font-size: 16px;
-  line-height: 22px;
+  line-height: 24px;
+  font-weight: 100;
 }
 
 /*GENERAL MEDIA QUERIES*/
@@ -41,8 +42,16 @@ media (min-width:){ /*tablets*/
 
 }
 @media (min-width: 1200px) { /*Laptops & Desktop*/
+  .container {
+    padding: 4em 25px;
+  }
   h1 {
     font-size: 48px;
+    line-height: 50px;
+    margin-bottom: 15px;
+  }
+  h2 {
+    font-size: 36px;
   }
 }
 
@@ -51,26 +60,39 @@ media (min-width:){ /*tablets*/
 .logo {
   width: auto;
   height: 50px;
+  display: block;
+  margin: 10px auto;
 }
 nav {
-  background-color: white;
-  box-shadow: 1px 1px 3px rgba(0,0,0,0.35);
-  padding: 20px 0;
+  background-color: rgba(255,255,255,0.9);
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.55);
   z-index: 1000;
+  padding: 10px;
 }
 nav a {
   text-decoration: none;
   color: #FF9230;
   font-size: 16px;
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
 }
 nav a:hover {
   color: lightgray;
 }
+.navlinks .button {
+  margin: 5px auto;
+  display: block;
+}
+
 /*NAVBAR MEDIA QUERIES*/
 @media (min-width:){ /*tablets*/
 
 }
 @media (min-width: 1200px) { /*Laptops & Desktop*/
+  .logo {
+    margin: 0 auto;
+  }
   nav {
     padding: 15px 25px;
     display: flex;
@@ -78,14 +100,18 @@ nav a:hover {
     justify-content: space-between;
     align-items: center;
   }
-  .navlinks a {
+  nav a {
     margin-right: 15px;
+    display: inline-block;
+  }
+  .navlinks .button {
+    display: inline-block;
   }
 }
 
 /*HERO*/
 .hero {
-  height: 100vh;
+  height: 90vh;
   text-align: center;
   background:
     linear-gradient(
@@ -102,14 +128,21 @@ nav a:hover {
   align-items: center;
   color: white;
 }
+.hero-content p {
+  font-weight: 100;
+}
 
 /*HERO MEDIA QUERIES*/
-media (min-width:){ /*tablets*/
+media (min-width: ){ /*tablets*/
 
 }
 @media (min-width: 1200px) { /*Laptops & Desktop*/
   .hero-content {
-    width
+    width: 70%;
+  }
+  .hero-content p {
+    font-size: 20px;
+    line-height: 28px;
   }
 }
 
@@ -122,9 +155,8 @@ media (min-width:){ /*tablets*/
   text-align: center;
 }
 .why-us-box img {
-  height: 200px;
-  width: 200px;
-  background-color: black;
+  height: 120px;
+  width: 120px;
   display: block;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -133,6 +165,23 @@ media (min-width:){ /*tablets*/
   font-size: 120px;
   color: #FF9230;
   margin-bottom: 10px;
+}
+
+/*WHY US MEDIA QUERIES*/
+media (min-width: ){ /*tablets*/
+
+}
+@media (min-width: 1200px) { /*Laptops & Desktop*/
+  .why-us .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .why-us-box {
+    width: 30%;
+    margin: 0 10px;
+  }
 }
 
 /*HOW IT WORKS*/
@@ -164,6 +213,27 @@ media (min-width:){ /*tablets*/
   margin-bottom: 15px;
 }
 
+/*HOW IT WORKS MEDIA QUERIES*/
+media (min-width:){ /*tablets*/
+
+}
+@media (min-width: 1200px) { /*Laptops & Desktop*/
+  .how-it-works {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .img-display {
+    width: 60%;
+  }
+  .list-of-points {
+    width: 40%;
+    padding-left: 3em;
+  }
+}
+
 
 /*PRICING*/
 .pricing {
@@ -174,11 +244,108 @@ media (min-width:){ /*tablets*/
   padding: 25px 25px;
   box-shadow: 1px 1px 3px rgba(0,0,0, 0.15);
   margin: 10px 0;
+  height: 100%;
+  border: 2px solid #FF9230;
+  border-radius: 2px;
+}
+.pricing-box ul li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.price {
+  font-weight: 100;
+  font-size: 50px;
+  margin-bottom: 35px;
+  display: block;
+  line-height: 53px;
+}
+.price sup {
+  font-size: 24px;
+}
+.price span {
+  font-size: 24px;
+}
+
+/*PRICING MEDIA QUERIES*/
+media (min-width:){ /*tablets*/
+
+}
+@media (min-width: 1200px) { /*Laptops & Desktop*/
+  .pricing-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .pricing-box {
+    width: 30%;
+    margin: 0 10px;
+  }
+  .pricing-box p {
+    margin: 0 10px;
+  }
 }
 
 /*CALL TO ACTION*/
 .call-to-action {
   text-align: center;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+      ),
+    url('../imgs/bg-2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.testimonial-box {
+  background-color: white;
+  padding: 35px;
+  border-radius: 2px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+}
+.testimonial-box img {
+  width: 150px;
+  height: 150px;
+  border-radius: 500px;
+  border: 2px solid #FF9230;
+  margin-bottom: 10px;
+}
+.rating {
+  margin: 10px 0;
+}
+.rating i {
+  color: #EDE539;
+}
+.cta-container {
+  padding: 2em 0;
+  color: white;
+}
+
+/*CALL TO ACTION MEDIA QUERIES*/
+media (min-width:){ /*tablets*/
+
+}
+@media (min-width: 1200px) { /*Laptops & Desktop*/
+  .call-to-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cta-container {
+    width: 50%;
+    text-align: left;
+    padding: 35px;
+  }
+  .testimonial {
+    width: 50%;
+    order: 2;
+  }
+  .testimonial-box {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 
 /*FOOTER*/
@@ -187,10 +354,23 @@ footer {
   color: white;
   text-align: center;
 }
+footer .container {
+  padding: 2em 25px;
+}
 .social-media i {
   color: white;
   display: inline-block;
   margin-right: 10px;
   margin-top: 10px;
   font-size: 24px;
+}
+
+/*FOOTER MEDIA QUERIES*/
+media (min-width:){ /*tablets*/
+
+}
+@media (min-width: 1200px) { /*Laptops & Desktop*/
+  footer.container {
+    padding: 2.5em 25px;
+  }
 }

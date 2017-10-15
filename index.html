@@ -23,14 +23,17 @@
     <!--NAVIGATION-->
     <header>
       <nav>
-        <img class="logo" src="imgs/logo/menuize.png"/>
-        <div class="navlinks">
-         <a href="#">Why Us</a>
-         <a href="#">How it Works</a>
-         <a href="#">Pricing</a>
-         <a href="#">Login</a>
-         <a href="#">Sign Up</a>
-       </div>
+        <div class="logo-space">
+            <img class="logo" src="imgs/logo/menuize.png"/>
+        </div>
+          <div class="navlinks">
+           <a href="#">Why Us</a>
+           <a href="#">How it Works</a>
+           <a href="#">Pricing</a>
+           <a href="#">Login</a>
+           <a class="button" href="#">Sign Up</a>
+         </div>
+        </div>
       </nav>
       <!--HERO-->
       <div class="container hero">
@@ -52,24 +55,21 @@
         <h1>Why Us?</h1>
         <div class="row">
           <div class="why-us-box">
-            <!--img src="#"-->
-            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            <img src="imgs/icon1.png">
             <h2>Time</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
               labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.</p>
           </div>
           <div class="why-us-box">
-            <!--img src="#"-->
-            <i class="fa fa-money" aria-hidden="true"></i>
+            <img src="imgs/icon2.png">
             <h2>Money</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
               labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.</p>
           </div>
           <div class="why-us-box">
-            <!--img src="#"-->
-            <i class="fa fa-star-o" aria-hidden="true"></i>
+            <img src="imgs/icon3.png">
             <h2>Quality</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
               labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -81,13 +81,13 @@
       <!--HOW IT WORKS-->
       <section class="container how-it-works">
         <div class="img-display">
-          <img src="imgs/bg-2.jpg" /> <!--Images of product UI-->
+          <img src="imgs/menuize-desktop.png" /> <!--Images of product UI-->
         </div>
         <div class="list-of-points">
           <h2>How it Works</h2>
           <ul>
             <li>Pick your favorite recipe</li>
-            <li>Create a curate calendar</li>
+            <li>Create and curate a calendar</li>
             <li>Know your ingredients</li>
             <li>Plan Accordingly</li>
           </ul>
@@ -101,14 +101,24 @@
         <div class="pricing-container">
           <div class="pricing-box">
             <h3>Freemium</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+            <p class="price"><sup>$ </sup>0 <span>/ month</span></p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Lorem ipsum dolor sit amet</li>
+            </ul>
               <a class="button btn-center" href="#">I want to get started!</a>
           </div>
           <div class="pricing-box">
             <h3>Premium</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+            <p class="price"><sup>$ </sup>3.99 <span>/ month</span></p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Lorem ipsum dolor sit amet</li>
+            </ul>
             <a class="button btn-center" href="#">I want to get started!</a>
           </div>
         </div>
@@ -116,26 +126,42 @@
 
       <!--CALL TO ACTION-->
       <section class="container call-to-action">
-        <div class="cta-container">
-          <h1>Empower the way you eat</h1>
-          <p>Lorem Ipsum</p>
-          <a class="button" href="">Create my first calendar</a>
-        </div>
         <div class="testimonial">
-
+          <div class="testimonial-box">
+            <img src="imgs/headshot.png" />
+            <h3>Maria R.</h3>
+            <div class="rating">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+          </div>
+        </div>
+        <div class="cta-container">
+          <h1>Empower the <br />way you eat</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+          <a class="button" href="">Create my first calendar</a>
         </div>
       </section>
     </main>
 
     <!--FOOTER-->
-    <footer class="container">
-      <p>&copy; 2017 Company, Inc.</p>
-      <div class="social-media">
-        <i class="fa fa-facebook-official" aria-hidden="true"></i>
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-        <i class="fa fa-instagram" aria-hidden="true"></i>
+    <footer>
+      <div class="container">
+        <p>&copy; 2017 Menuize, Inc.</p>
+        <div class="social-media">
+          <i class="fa fa-facebook-official" aria-hidden="true"></i>
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </div>
       </div>
     </footer>
-
   </body>
   </html>
