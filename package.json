@@ -1,0 +1,22 @@
+{
+  "name": "mealprep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -a localhost -p 1234"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viizhu/mealprep.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viizhu/mealprep/issues"
+  },
+  "homepage": "https://github.com/viizhu/mealprep#readme",
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  }
+}
